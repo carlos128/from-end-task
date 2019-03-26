@@ -1,0 +1,36 @@
+<div class="container-fluid">
+<div class="row">
+	<div class="col-12 modal-header">
+			<h4 mat-dialog-title>NUEVO USUARIO</h4>
+	</div>
+</div>
+</div>
+		<div mat-dialog-content >
+		<form class="btn-general">
+				<div class="form-group">
+					<label for="nombre">Nombre</label>
+					<input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Ej Carlos Arturo">
+					<small id="nombre" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+					<div class="form-group">
+					<label for="apellido">Apellido</label>
+					<input type="text" class="form-control" id="apellido" aria-describedby="emailHelp" placeholder="Ej Gonzalez Alvarez">
+					<small id="apellido" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" class="form-control" id="Email" placeholder="Ej gcralos@exemple.com">
+						<small id="apellido" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				<div class="form-group">
+						<div mat-dialog-actions >
+
+							<button class="btn btn-primary " (click)="onNoClick()">Salir</button>
+							<button class="btn btn-primary"> Guardar</button>
+						</div>
+				</div>
+				
+</form>
+		</div>
+	
+

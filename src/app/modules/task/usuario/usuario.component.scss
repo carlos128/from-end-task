@@ -1,0 +1,50 @@
+@import '../../../../assets/scss/color';
+.input-text{
+ height: 30px;
+ background: $color-dos;
+ border-radius: 0;
+ border: 0;
+}
+.lable-style{
+	 color: $color-tres;
+	 font-weight: bold;
+}
+.container{
+	margin: 0;
+	padding: 0;
+}
+.list-task{
+	background: #ffffff;
+	height: 100vh;
+
+	
+}
+.list-ul{
+	margin-top: 10px;
+	padding: 0;
+	width: 100%;
+	height: 14vh;
+	background:$color-dos;
+	list-style: none;
+	border-left: 10px solid $color-cuatro;
+	margin-left: 5px;
+	
+	li{
+		margin-left: 10px;
+		font-weight: bold;
+		color: $color-uno;
+		span{
+			font-size: .8em;
+			font-weight: normal;
+		}
+		
+	}
+	button{
+		text-decoration: none;
+		color: $color-uno;		
+		padding: 2px;
+		border:0;
+		outline:none;
+	}
+	
+}

@@ -1,0 +1,23 @@
+<mat-drawer-container class="dashboard">
+	<mat-drawer mode="side" opened   class="nav-prinsipal">
+		<button mat-button class="btn-nav" 
+		[routerLink]="[ '/dashboard/usuario' ]" routerLinkActive="actives">
+		<span><fa-icon [icon]="faUser"></fa-icon></span><br>
+		Usuario</button>
+
+		<button mat-button class="btn-nav" 
+		[routerLink]="[ '/proyecto' ]" routerLinkActive="actives">
+		<span><fa-icon [icon]="faProjectDiagram"></fa-icon></span><br>
+		Proyecto</button>
+
+		<button mat-button class="btn-nav" 
+		[routerLink]="[ '/tarea' ]" routerLinkActive="actives">
+		<span><fa-icon [icon]="faUser"></fa-icon></span><br>
+		Tareas</button>
+
+	</mat-drawer>
+	<mat-drawer-content>
+	<!--  lista la informacion  delos componentes padreas-->
+			<router-outlet></router-outlet>
+	</mat-drawer-content>
+</mat-drawer-container>

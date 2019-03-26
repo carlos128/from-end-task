@@ -1,0 +1,22 @@
+@import '../../../assets/scss/color';
+.mat-dialog-container {
+	padding: 0;
+	margin: 0;
+  }
+.modal-header{
+	margin-top: 0;
+	padding: 0;
+	h4{
+		color: $color-uno;
+	}
+}
+.btn-general{
+	button{
+		color: aquamarine;
+		margin-right: 50px;
+	}
+	label{
+		color: $color-uno;
+		font-weight: bold;
+	}
+}

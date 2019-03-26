@@ -1,0 +1,70 @@
+<div class="container-fluid">
+		<div class="row d-flex flex-row-reverse bd-highlight">
+
+				<div class="nombre-apellido">
+					<div class="p-2 bd-highlight">
+					<h3>{{data.nombre}}</h3><br>
+					</div>
+					<div class="p-2 bd-highlight">
+					<h5>{{data.email}}</h5>
+					</div>
+				</div>
+
+		</div>
+			<div class="row">
+					<!--  comiensa char  donos-->
+					<div class="col-6">
+						<div>
+							<div>
+								<div style="display: block">
+								<canvas baseChart
+									[data]="doughnutChartData"
+									[labels]="doughnutChartLabels"
+									[chartType]="doughnutChartType">
+								</canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--  fin a chardonus-->
+
+					<div class="col-6">
+						<form>
+						<div class="row ">
+								<div class="col">
+								<label  class="lable-style" >Fecha de Creacion</label>
+								<input type="date" class="form-control input-text">
+								</div>
+								<div class="col">
+									<label  class="lable-style">Fecha Finalizacion</label>
+									<input type="date" class="form-control input-text">
+								</div>
+								<div class="col">
+									<label  class="lable-style">Seleccione el Estado</label>
+									<select id="inputState" class="form-control  input-text">
+										<option selected>ESTADO</option>
+										<option>...</option>
+									</select>
+								</div>
+						</div>
+					</form>
+					</div>
+			</div>
+			<div class="row">
+			<!--  formulario  de busquedas-->
+			<div class="col-12">
+			<ul class="list-ul">
+								<li>CARLOS  ARTURO  GONZALEZ</li>
+								<li><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Eos sapiente architecto laboriosa</span></li>
+								<li style="margin-top:15px;" class="d-flex justify-content-start">
+									<h5>FECHA DE CREACION  <span>20-08-2019</span></h5>
+									<h5> FECHA DE FINALIZACION<span>30-09-2019 </span></h5>
+									<h5> DETALLE<span>H</span></h5>	
+									<h5> ESTADO<span>TERMINADO</span></h5>		
+								</li>
+								</ul>
+			</div>
+			<!-- fin formulario  busqueda-->
+			</div>
+</div>

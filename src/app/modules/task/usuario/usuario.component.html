@@ -1,0 +1,55 @@
+<div class="container">
+ <div class="row">
+  <!--LISTA DE USUARIOS -->
+<div class="col-3 list-task">
+		<!-- BUSCAR -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-8" style="margin-top:10%">
+						<label for="" class="lable-style">Buscar  Usuario</label>
+						<input type="text"  name="emailuser" class="form-control input-text" [(ngModel)]="emailuser">
+				</div>
+				<div class="col-4" style="margin-top:55px;">
+					<button mat-mini-fab (click)="openDialon()">
+							<span><fa-icon [icon]="faPlus"></fa-icon></span><br>
+					</button>
+				</div>
+					
+			</div>
+		</div>
+		<!-- FIN  BUSCAR -->
+		<mat-divider style="margin-top:10%;"></mat-divider>
+		<!--LISTA DE ELEMNTOS-->
+		<div class="row">
+			<div class="col-12">
+				
+						<cdk-virtual-scroll-viewport  style="height: 500px" itemSize="90" >
+								<ng-container *cdkVirtualFor="let usuario of usuariosModel | filterUser:emailuser">
+								<mat-card class="list-ul">
+										<li> {{ usuario.nombre}} </li>
+								<li><span>{{usuario.email}}</span></li>
+								<li style="margin-top:15px;">
+									<button class="btn btn-default" (click)="usuDetalle(usuario)">Ver <span><fa-icon [icon]="faEye"></fa-icon></span></button>
+									<button class="btn btn-default"> Editar <span><fa-icon [icon]="faUserEdit"></fa-icon></span></button>
+									<button class="btn btn-default">Eliminar <span><fa-icon [icon]="faTrash"></fa-icon></span></button>
+									</a>
+								</li>
+								
+								</mat-card>
+								
+								
+								</ng-container>
+						</cdk-virtual-scroll-viewport>
+			
+			</div>
+		</div>
+</div>
+
+<!-- FIN LISTA DE USUARIOS -->
+<!-- DETALLE  USUARIO-->
+<div class="col-9">
+	<app-usuario-detalle></app-usuario-detalle>
+</div>
+<!-- DETALLE USUARIO -->
+ </div>
+</div>
